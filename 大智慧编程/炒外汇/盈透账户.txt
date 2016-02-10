@@ -1,0 +1,46 @@
+盈透
+
+xuejy
+
+Your username: xuejy452  
+Your account number: U584209  
+
+
+314157xj
+
+
+fxsol
+
+Please use the following to login: 
+User ID : u2705233Password : u2705233
+
+MT4.0常用热键
+Ctrl+M - 市场报价 
+Ctrl+N - 导航 
+VCtrl+T - 帐号终端 
+Ctrl+D - 数据窗口
+Ctrl+G - 网格
+Ctrl+L - 成交量
+Ctrl+O - 选项: 
+Ctrl+F - 光标变成十字精确型
+Ctrl+Y - 在图表上显示日期线
+Ctrl+W - 关闭当前图表窗口
++ 图表放大
+- 图表缩小
+Alt+1 -  美国线
+Alt+2 -  蜡烛图
+Alt+3 -  折线图
+F1 - 获得帮助
+F2 - 历史数据中心
+F3 - 全局变量
+F4 - MT程序编辑器
+F5 - 图标窗口重绘
+F6 - 交易系统测试
+F7 - 交易系统参数设置
+F8 - 图表主窗口属性
+F9 - 订单
+F10 - 弹出报价
+F11 - 图标窗口全屏 
+F12 - 图表步进
+←↑ - 图表向左移动 
+→↓ - 图表向右移动

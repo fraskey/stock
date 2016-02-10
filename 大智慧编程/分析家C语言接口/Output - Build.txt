@@ -1,0 +1,10 @@
+Deleting intermediate files and output files for project 'FxjFunc - Win32 Release'.
+--------------------Configuration: FxjFunc - Win32 Release--------------------
+Compiling...
+StdAfx.cpp
+Compiling...
+FxjFunc.cpp
+Linking...
+   Creating library Release/FxjFunc.lib and object Release/FxjFunc.exp
+
+FxjFunc.dll - 0 error(s), 0 warning(s)

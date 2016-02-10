@@ -1,0 +1,26 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: FxjFunc - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\x03343.H3C\AppData\Local\Temp\RSPEE6D.tmp" with contents
+[
+/nologo /Zp1 /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "FXJFUNC_EXPORTS" /FR"Debug/" /Fp"Debug/FxjFunc.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\大智慧编程\分析家C语言接口\dingdifenxing.cpp"
+]
+Creating command line "cl.exe @C:\Users\x03343.H3C\AppData\Local\Temp\RSPEE6D.tmp" 
+<h3>Output Window</h3>
+Compiling...
+Skipping... (no relevant changes detected)
+dingdifenxing.cpp
+
+
+
+<h3>Results</h3>
+dingdifenxing.obj - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

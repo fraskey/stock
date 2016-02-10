@@ -1,0 +1,4 @@
+---- MyGetXieLv Matches (3 in 1 files) ----
+Dingdifenxing.cpp:float MyGetXieLv(CALCINFO1* pstCalcInfo,int n1,int n2);
+Dingdifenxing.cpp:        pstTemPriData->matrix_dingdi_xielv[i] = MyGetXieLv(pstCalcInfo,pstTemPriData->dingdi_dui_pos_matrix[i][1],pstTemPriData->dingdi_dui_pos_matrix[i][0]);
+Dingdifenxing.cpp:float MyGetXieLv(CALCINFO1* pstCalcInfo,int n1,int n2)

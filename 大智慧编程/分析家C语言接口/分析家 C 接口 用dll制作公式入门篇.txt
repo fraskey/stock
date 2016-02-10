@@ -1,0 +1,118 @@
+1. [b]粗体文字 Abc[/b]
+2. [i]斜体文字 Abc[/i]
+3. [u]下划线文字 Abc[/u]
+4. [color=red]红颜色[/color]
+5. [size=3]文字大小为 3[/size]
+6. [font=仿宋]字体为仿宋[/font]
+7. [align=Center]内容居中[/align]
+8. [url]http://www.55188.com[/url]
+9. [url=http://www.55188.com]理想 论坛[/url]
+10.[email]myname@mydomain.com[/email]
+11.[email=support@55188.com]理想 技术支持[/email]
+12.[quote]Discuz! Board 是由北京康盛世纪科技有限公司开发的论坛软件[/quote] 
+   （引用内容，类似的代码还有 [code][/code]）
+13.[hide]免费帐号为: username/password[/hide]
+   （按回复隐藏内容，仅限版主及管理员使用）
+    效果:只有当浏览者回复本帖时，才显示其中的内容，
+    否则显示为“**** 隐藏信息 跟帖后才能显示 *****”
+14.[hide=20]免费帐号为: username/password[/hide]   
+   （按积分隐藏内容，仅限版主及管理员使用）
+   效果:只有当浏览者积分高于 20 点时，才显示其中的内容，
+   否则显示为“**** 隐藏信息 积分高于 20 点才能显示 ****”
+
+
+[b][color=red][size=3][align=Center]<<分析家 C 语言接口>> 用dll制作公式入门篇[/align][/size][/color][/b]
+[b][color=red][align=Center]友情提示：下述软件本人均未试用，安装前请先查毒。[/align][/color][/b]
+
+/* ============================BeginningOfHeader===============================
+/ 名称: <<分析家 C 语言接口>> 用dll制作公式入门
+/
+/ 作者: Dexin Hui
+/ 电子邮件：Dexin.Hui@gmail.com
+/ 日期: 2006-9-28
+/ 依附文件：fxj_c++.rar
+/ 测试环境: WinXP_SP2 VC++6.0SP6 FXJ2006 V6.0.00.2200
+/ 备注: 本文件基于fxj_c++FromHuiTianQi.zip改编  欢迎纠错
+/ 修改:
+/
+/------------------------------------------------------------------------------- 
+/ 声明:本代码按现状("AS IS")提供，没有任何明确或隐含的担保，使用者自己须承担使用 
+/ 本代码的风险。采用知识共享组织署名 2.5 中国大陆许可协议授予使用者使用或复制本
+/ 代码的权限，可以将其用于任何用途，只要在所有副本中包含以上说明及本声明。
+/ 知识共享组织许可协议 http://creativecommons.org/licenses/by/2.5/cn/
+/===============================EndingOFHeader=================================*/
+
+[b]   一、《分析家 C 语言接口》是什么？[/b]
+　　《分析家 C 语言接口》是汇天奇公司为《分析家》用户使用 C 语言编写《分析家》软件公式系统函数，在《分析家》公式系统中调用，实现现有公式系统无法实现的一些算法，使您能使用《分析家》软件更快地去赚钱或赔钱而制定的规则。
+    注：1. C 语言为程序设计语系，具体有 Turbo C、MSC、VC++、BC++、gcc......
+          2. 《分析家 C 语言接口》受传入、传出数据限制，常规下仅可有限扩
+             充《分析家》软件公式系统函数。
+          3. 《飞狐 C 语言接口》与《分析家 C 语言接口》兼容并对其有所扩充。
+
+[b]   二、《分析家 C 语言接口》适用谁？[/b]
+    1. 技术分析信奉者，相信交易数据可以表现市场趋向。
+    2. 熟练掌握《分析家》软件公式编制，想实现在现有方法下难以实现的算法。
+       若未能融会贯通常规公式编制请您先下载相关公式编写的书籍
+       [url]http://www.55188.cn/viewthread.php?tid=455066&extra=&page=1[/url]
+       学完后90%可以解决您的公式编写问题！
+    3. 特别提示——为实现迭代、循环、分支使用 C 接口已成历史。分析家5.0推以出类似 C 的
+       语言来编辑公式，在公式中可以使用迭代、循环、分支语句；并且还提供支持相关分析和
+       专业财务的函数。（见V6.0.00.2200 联机帮助）及《分析家V6.0公式命令函数集》
+       [url]http://www.55188.com/viewthread.php?tid=1216084&page=1&extra=page%3D1#pid23718898[/url]
+       编写公式是手段不是目的！为达目的方法越简单则效果越好！！！
+
+[b]   三、准备东东[/b]
+
+    1. 两本最低级别入门书籍 
+       a.《C 程序设计语言》
+          [url]http://soft.52z.com/Down2.Asp?ID=2010&action=3&key=F4567453[/url]
+       b.《VC++ 动态链接库（ DLL ）的开发与应用》
+          [url]http://218.75.26.44/journal/VC++%B6%AF%CC%AC%C1%B4%BD%D3%BF%E2%A3%A8DLL%A3%A9%B5%C4%BF%AA%B7%A2%D3%EB%D3%A6%D3%C3.PDF[/url]
+    2. 参考书
+       a. Visual C++6.0从入门到精通
+          [url]http://soft.studa.com/downinfo/19210.html[/url]
+       b. VC 6.0 中文版语言参考手册
+       c. VC 6.0 中文版运行库参考手册
+          [url]http://www.7880.com/Download/VC-6.0-8518.html[/url]
+    3. 安装 VC++ 6.0+SP6.大企业集成安装版(1CD) CDKey:1111111
+       [url]http://www.piaodown.com/down/down.asp?id=22825&no=1[/url]
+    4. 安装 MSDN 帮助文件(2CD) 注：可不安装
+       [url]http://www.piaodown.com/down/down.asp?id=22825&no=2[/url] 
+       [url]http://www.piaodown.com/down/down.asp?id=22825&no=3[/url]
+    5. 解压《分析家 C 语言接口》[color=red] 2006.9.28 修改 以前下过的朋友请重新下载[/color]
+　　6. 学习《VC++ 动态链接库 DLL 的开发与应用》（必读这三页纸）
+
+    以上如有死链请查找：[url]http://www.google.cn[/url]
+
+[b]   四、哈哈！终于可以开始了[/b]
+
+    1. 启动 Vc++
+    2. 开启 FxjFunc.dsw 项目 File -> Open Workspace -> 选择《分析家 C 语言接口》所在目录
+               -> 选择文件 FxjFunc.dsw -> 打开。
+    3. 修改项目设置 Alt + F7 
+        我的《分析家》软件目录为: D:\Fxj; 《分析家 C 语言接口》目录 D:\fxj_C  DLL文件名FxjFunc.dll
+        请照图修改
+       a. debug  
+          [img]http://www.55188.com/attachment.php?aid=990300&noupdate=yes[/img]
+       b.Link
+          [img]http://www.55188.com/attachment.php?aid=990301&noupdate=yes[/img]
+       c.C/C++ 字节对齐 = 1 Byte
+         [img]http://www.55188.com/attachment.php?aid=990302&noupdate=yes[/img]
+    4. 生成项目 
+       按 F7 键生成 FxjFunc.dll 文件。如果没有错误，显示下面结果。
+
+       --------------------Configuration: FxjFunc - Win32 Debug--------------------
+       FxjFunc.dll - 0 error(s), 0 warning(s)
+
+    5. 生成的FxjFunc.dll文件在你的分析家或飞狐\FmlDLL目录中。如不在请返回前面修改设置。
+    6. 在分析家中编辑公式。
+       a.MYVOL
+         [img]http://www.55188.com/attachment.php?aid=990303&noupdate=yes[/img]
+       b.MRAR
+         [img]http://www.55188.com/attachment.php?aid=990304&noupdate=yes[/img]
+    7. 启用公式
+         [img]http://www.55188.com/attachment.php?aid=990305&noupdate=yes[/img]
+       
+[b][color=red][align=Center]一切尽在源码中，请细读源码，你一定可以遍出仅属于你自己的公式！[/align][/color][/b]
+
+       

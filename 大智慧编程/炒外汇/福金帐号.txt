@@ -1,0 +1,7 @@
+名称 ：fraskey
+账户类型：demodemo-USD(1:200)
+存款额：1000000
+服务器：FXCM-Demo
+帐号：2089230541       2089230541
+主密码：upu1naq        upu1naq
+投资人密码：brg4nvy    brg4nvy
